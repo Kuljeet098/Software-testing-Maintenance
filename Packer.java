@@ -50,7 +50,7 @@ public class Packer {
         }
         return packedBoxes;
     }
-  
+    public static void main(String[] args) {
         
         Address depotAddress = new Address("23 Good Luck St", "Blue View", "Sandy Shores", "H337", new Coordinates(138, 995));
         Depot depot = new Depot("Main Depot", depotAddress);
