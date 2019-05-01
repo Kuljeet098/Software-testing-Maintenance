@@ -64,11 +64,11 @@ public class Box {
    // }
     
     public boolean canFit(Product p) {
-        return p.getWeight() < 40;
+        return p.getWeight() < 20;
     }
     
     public boolean canFit(Product p, int quantity) {
-        return (p.getWeight() * quantity) < 40;
+        return (p.getWeight() * quantity) < 20;
     }
     
     public double remainingCapacity() {
@@ -83,5 +83,11 @@ public class Box {
         return false;
     }
     
-   
+    public boolean isHeavy(){
+        if(contents.getTotalWeight()>15){
+            
+         return contents.hasHeavyItems();
+        }
+        return true;
+}
 }
