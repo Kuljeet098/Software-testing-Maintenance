@@ -93,7 +93,15 @@ public class Manifest {
         }
         return false;
     }
- 
+    //method for hazardous items
+ public boolean hasHazardousItems() {
+        for (Product p : quantities.keySet()) {
+            if (p.isHazardous()) {
+                return true;
+            }
+        }
+        return false;
+    }
 public boolean hasHeavyItems() {
    for (Product p : quantities.keySet()) {
             if (p.isHeavy()) {
