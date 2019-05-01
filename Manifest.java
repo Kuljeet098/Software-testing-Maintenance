@@ -109,5 +109,6 @@ public boolean hasHeavyItems() {
         }
         return false;
     }
-
+//closing bracket added
+}
 
