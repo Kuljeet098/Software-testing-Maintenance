@@ -7,9 +7,9 @@ package packer;
 public class Box {
     
     
-    private Manifest contents;
-    private Customer customer;
-    private Depot depot; 
+    public Manifest contents;
+    public Customer customer;
+    public Depot depot; 
 
     public Box(Customer customer, Depot depot) {
         this.customer = customer;
@@ -17,9 +17,7 @@ public class Box {
         contents = new Manifest();
     }
 
-    public Box(Depot d, Customer c) {
-        
-    }
+    
     
     public void addProduct(Product product) {
         if (canFit(product)) {
@@ -72,7 +70,7 @@ public class Box {
     }
     
     public double remainingCapacity() {
-        return 40 - this.getWeight();
+        return 20 - this.getWeight();
     }
     
     public boolean isFragile() {
